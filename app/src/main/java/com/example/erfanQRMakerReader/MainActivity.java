@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String data = qrValue.getText().toString();
                 if (data.isEmpty()) {
-                    qrValue.setError("Value required");
+                    qrValue.setError("حتما باید مقداری را وارد کنید");
                 } else {
 
                     QRGEncoder qrgEncoder = new QRGEncoder(data, QRGContents.Type.TEXT, 500);
